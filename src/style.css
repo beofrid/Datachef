@@ -1,8 +1,14 @@
+
+
+
 #list {
+  background-color: black;
+  width: 80%;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px; 
-  padding: 20px;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 1.25rem;  
+  padding: clamp(10px, 8vw, 60px);
 }
 
 .card {
@@ -23,3 +29,9 @@
   height: 200px;
   object-fit: cover;
 }
+
+/* @media (width<=750px){
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+
+  
+} */
