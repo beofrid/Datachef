@@ -1,0 +1,45 @@
+#list {
+  width: 80%;
+  min-width: 250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 1.25rem;  
+  padding: clamp(10px, 8vw, 60px);
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px); 
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+@media (width<=950px){
+  #list {
+    min-width: 250px;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+  
+}
+
+@media (width<=750px){
+  #list {
+    min-width: 250px;
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+
+  }
+  
+}
