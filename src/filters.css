@@ -1,0 +1,49 @@
+/*============================================
+ código Bruno Medeiros Dias 
+============================================*/
+
+.filters {
+    margin: 0 auto;
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: solid 2px #ffa777;    
+    padding: 8px;
+    justify-content: center;
+}
+
+.category-btn {
+    margin: 4px;
+    border: solid 1px #ffa777;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.category-btn:hover {
+    background-color: #fcb690;
+}
+
+.search-container {
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 4px;       
+}
+
+.level, #search-input {
+    grid-row: 2;
+}
+
+#search-input{
+    height: 2rem;
+    width: 100%;
+    border: none;
+    box-shadow: 0 1px 4px #ffa777;
+
+
+}

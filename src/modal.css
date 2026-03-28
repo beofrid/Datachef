@@ -1,0 +1,64 @@
+/*============================================
+ código Bruno Medeiros Dias 
+============================================*/
+
+.modal-container {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px) grayscale(70%);
+}
+
+.modal {
+    border-radius: 5px;
+    width: 50%;
+    height: 70%;
+    background-color: #fafafa;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+.modal h2 {
+    margin: 4px;
+    background-color: #fcb690;
+    text-align: center;
+}
+
+.modal img {
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.modal h4 {
+    margin-top: 32px;
+}
+.modal p {
+    margin-top: 16px;
+    white-space: pre-line;
+}
+
+.modal button {
+    margin-top: auto;
+    padding: 4px 24px 4px 24px;
+    border: none;
+    background-color: #ff8e51;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.modal button:hover {
+  
+  background-color: #ffa777;
+  transform: translateY(-1px); 
+
+}

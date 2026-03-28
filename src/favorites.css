@@ -1,0 +1,40 @@
+/*============================================
+ código Bruno Medeiros Dias 
+============================================*/
+.fav-list {
+    margin: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border: solid 1px #ff8e51;
+}
+
+.fav-list img {
+    width: 30%;
+}
+
+.fav-list p {
+    font-weight: 600;
+    text-align: center;
+    width: 40%;
+}
+.container a {
+    margin-top: 16px;
+    padding: 4px 24px 4px 24px;
+    border: none;
+    background-color: #ff8e51;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3d3d3d;
+    text-align: center;
+}
+
+.container {
+    max-width: 640px;
+}
+

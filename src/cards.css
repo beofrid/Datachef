@@ -1,45 +1,76 @@
+/*============================================
+ código Bruno Medeiros Dias 
+============================================*/
+
 #list {
-  width: 80%;
-  min-width: 250px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(250px, 1fr));
-  gap: 1.25rem;  
-  padding: clamp(10px, 8vw, 60px);
+    width: 80%;
+    min-width: 250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 1.25rem;
+    padding: clamp(10px, 8vw, 60px);
 }
 
 .card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.2s;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+    cursor: default;
 }
 
 .card:hover {
-  transform: translateY(-5px); 
+    transform: translateY(-5px);
 }
 
 .card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
-@media (width<=950px){
-  #list {
-    min-width: 250px;
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
-  }
-  
+.card button {
+    border: none;
+    height: 3vh;
+    background-color: #ffa777;
+    cursor: pointer;
 }
 
-@media (width<=750px){
-  #list {
-    min-width: 250px;
-    grid-template-columns: repeat(1, minmax(250px, 1fr));
+.card h3 {
+    padding-left: 4px;
+    text-align: center;
+}
 
-  }
-  
+.category-container {
+    margin: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.recipe-category {
+    margin-left: 4px;
+    border: solid 1px #ffa777;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    font-size: 0.8rem;
+}
+
+@media (width<=950px) {
+    #list {
+        min-width: 250px;
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+    }
+}
+
+@media (width<=750px) {
+    #list {
+        min-width: 250px;
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+    }
 }
