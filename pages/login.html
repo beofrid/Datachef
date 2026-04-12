@@ -37,6 +37,9 @@ código Robson Lopes dos Santos
                 href="../pages/login.html"
                 >Login</a
             >
+            <span id="username">
+                
+            </span>
     </header>
 
 
@@ -56,10 +59,10 @@ código Robson Lopes dos Santos
         <form class="container">
             <h3>Entrar</h3>
             <Label>Email:</Label>
-            <input placeholder="seu@email.com" type="email">
+            <input placeholder="seu@email.com" type="email" id="id_email">
             <Label>Senha:</Label>
-            <input placeholder="********" type="password">
-            <button type="button">Entrar</button>
+            <input placeholder="********" type="password" id="id_senha">
+            <button type="button" onclick="valida_login()">Entrar</button>
         </form>
         
     </main>
@@ -95,5 +98,5 @@ código Robson Lopes dos Santos
     </footer>
 
 </body>
-<script src="../src/script.js"></script>
+<script src="../src/login.js"></script>
 </html>
